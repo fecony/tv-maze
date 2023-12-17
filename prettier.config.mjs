@@ -4,6 +4,8 @@ const config = {
     trailingComa: "always",
     tabWidth: 4,
     singleQuote: true,
+    jsxSingleQuote: true,
+    singleAttributePerLine: true,
     plugins: [
         "@ianvs/prettier-plugin-sort-imports",
         "prettier-plugin-tailwindcss",

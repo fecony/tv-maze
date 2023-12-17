@@ -70,6 +70,9 @@ logs
 
 node_modules
 bower_components
+dist
+dist-ssr
+*.local
 
 *.sublime*
 
@@ -140,3 +143,4 @@ $RECYCLE.BIN/
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,macos,react,dotenv,windows,cypressio,visualstudiocode,yarn
+

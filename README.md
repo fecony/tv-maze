@@ -1,30 +1,64 @@
-# React + TypeScript + Vite
+# TV Maze Proxy app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App to view tv maze shows data
 
-Currently, two official plugins are available:
+Deployed on: [not-tv-maze-app.surge.sh](https://not-tv-maze-app.surge.sh/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Setup
 
-## Expanding the ESLint configuration
+Clone the project
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+git clone git@github.com:fecony/tv-maze.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Go to the project directory
+
+```bash
+cd tv-maze
+```
+
+> Note: use correct node version. Current version used v18.19.0
+
+Install dependencies
+
+```sh
+yarn install
+```
+
+Create .env file
+
+```sh
+cp .env.example .env
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+yarn run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+yarn run build
+```
+
+## What it's built with?
+
+If you are not familiar with the different technologies used in this project, please refer to the respective docs.
+
+-   General
+    -   [vite](https://vitejs.dev/)
+    -   [react](https://react.dev/)
+    -   [axios](https://axios-http.com/) - Data fetching
+    -   [generouted](https://github.com/oedotme/generouted) - File based routing for vite
+    -   [superjson](https://github.com/blitz-js/superjson) - Serializing data
+    -   [zustand](https://docs.pmnd.rs/zustand/) - Store
+-   UI
+    -   [tailwindcss](https://tailwindcss.com/)
+    -   [shadcn/ui](https://ui.shadcn.com/)
+    -   [sonner](https://sonner.emilkowal.ski/) - Toasts
+    -   [dayjs](https://day.js.org/) - Date formating
+    -   [Tabler icons](https://tabler.io/icons)
+    -   [Inter font](https://rsms.me/inter/)
